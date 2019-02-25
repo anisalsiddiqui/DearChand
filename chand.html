@@ -1,0 +1,114 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Happy Birthday Chand</title>
+<meta name='viewport' content='width=content-width, initial-scale=1.0'>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+h1 { font-family: 'Aref Ruqaa', serif; font-size: 1.2em; text-align: center; }
+.cha { font-family: 'Charmonman', cursive; }
+  * { color: #fff; }
+	body { background: #000; }
+	#hold { background: #000; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 1; }
+	.img { width: 85%; margin: auto; position: relative; }
+	.img img { width: 100%; }
+	.img span { position: absolute; top: 0; left: 0; background:linear-gradient(to top, rgba(0,0,0,0.99), rgba(0,0,0,0.1)); width: 100%; height: 100%; }
+	.centr h1 { color: #fff; font-size: 1.4em; margin: auto; text-align: center; }
+	#user { display: block; width: 85%; margin:auto; padding: 10px; text-align: center; }
+	#user input { height: 40px; }
+	#name { background: #000; outline: 0; border: 2px solid #fff; border-radius: 20px 0 0 20px; padding-left: 10px; color: #fff; }
+	#submit { width: 40px; border: 2px solid #fff; border-radius: 0 20px 20px 0; height: 40px; color: #000; }
+	.centr { width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+	.hbc { font-size: 1.4em; margin: auto; text-align: center; transform: rotate(-15deg) translate(25px, -110px); }
+	.cake { width: 35%; margin: auto; }
+	.cake img { width: 100%; }
+	#txt { text-align: center; font-family: 'Aref Ruqaa', serif; }
+	</style>
+	<script>
+					function view() {
+						var value = document.getElementById('name').value;
+						var print = document.getElementById('guest');
+						var card = document.getElementById('cds');
+						var boys = ['Chand', 'Irfan', 'Shakti', 'Sajal', 'Harish', 'Prakash', 'Sahid', 'Sumit', 'Anis', 'Anis'];
+						var girls = ['Sanjana', 'Sweta', 'bro', 'Sandhya', 'bro', 'Nitu', 'bro', 'Saloni', 'bhai', 'bhai'];
+						if (value == boys[0] | value == girls[0]) {
+							print.innerHTML=boys[0] + ' ' + 'and' + ' ' + girls[0];
+							
+							}
+							else if (value == boys[1] | value == girls[1]) {
+							print.innerHTML=boys[1] + ' ' + 'and' + ' ' + girls[1];
+							
+							}
+							else if (value == boys[2] | value == girls[2]) {
+							print.innerHTML=boys[2] + ' ' + girls[2];
+							
+							}
+							else if(value == boys[3] | value == girls[3]) {
+							print.innerHTML=boys[3] + ' ' + 'and' + ' ' + girls[3];
+							
+							}
+							else if (value == boys[4] | value == girls[4]) {
+							print.innerHTML=boys[4] + ' ' + girls[4];
+							
+							}
+							else if (value == boys[5] | value == girls[5]) {
+							print.innerHTML=boys[5] + ' ' + 'and' + ' ' + girls[5];
+							
+							}
+							else if (value == boys[6] | value == girls[6]) {
+							print.innerHTML=boys[6] + ' ' + '' + ' ' + girls[6];
+							
+							}
+							else if (value == boys[7] | value == girls[7]) {
+							print.innerHTML=boys[7] + ' ' + girls[7];
+							
+							}
+							else if (value == boys[8] | value == girls[8]) {
+							print.innerHTML=boys[8] + ' ' + '' + ' ' + girls[8];
+							
+							}
+							else if (value == boys[9] | value == girls[9]) {
+							print.innerHTML='Anissa';
+							
+							}
+							else { alert('Something went wrong! Refresh and try again.');
+							print.innerHTML='Friend of friends';
+							
+                            }
+						var formpg = document.getElementById('hold');
+						formpg.style.top='-100%';
+						formpg.style.transition='0.5s';
+						}
+					</script>
+					</head>
+					<body>
+	<div id='hold'>
+		<div class='centr'>
+		<h1>Toh kaise hai Aaplog?</h1>
+		<div id='user'>
+			<input type='text' placeholder='Firstname' id='name' name='name' required><input type='submit' id='submit' onclick='view()' value='Go'>
+			</div>
+			<div class='img'>
+		<img src='img/chand.jpg'>
+		<span></span>
+		</div>
+		</div>
+		</div>
+		<div class='img'>
+		<img src='img/chand.jpg'>
+		<span></span>
+		</div>
+		<div class='hbc'>
+		<h1 class='cha'>Happy Birthday Chand</h1>
+		<span class='cha'>Celebration</span>
+		</div>
+		<div class='cake'>
+			<img src='img/cake.jpg'>
+			</div>
+		<div id='invite'>
+			<h1 id='guest'>Chand and Sanjana</h1>
+			<p id='txt'>Dear, You are invited to make my happiness double ?? Love you, please come.</p>
+			</div>
+		</body>
+		</html>
